@@ -1,0 +1,3 @@
+.NavUl>a>li{
+    @apply hover:underline hover:underline-offset-4
+}
