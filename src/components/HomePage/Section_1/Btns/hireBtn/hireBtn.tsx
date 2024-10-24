@@ -21,7 +21,7 @@ const HireBtn = () => {
       <div
         className={` bg-base-100 ${
           !hireFlag ? "hidden" : "block"
-        } fixed top-0 left-0 w-full h-full bg-slate-950/80 text-base`}
+        }  overflow-y-scroll  fixed top-0 left-0 w-full h-full  text-base`}
       >
         <div className=" relative container mx-auto px-5 h-full">
           <button

@@ -22,7 +22,7 @@ const Section_1 = () => {
               }}
             />
           </h1>
-          <p className="mt-3">
+          <p className="mt-3 opacity-80">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a,
             mollitia reiciendis nulla debitis ipsam laudantium ad placeat
             doloribus, illum dignissimos dolor distinctio iste ullam facilis
@@ -31,12 +31,12 @@ const Section_1 = () => {
           {/* --------- */}
           <div className="flex max-sm:flex-col max-sm:items-start mt-5 items-center gap-5">
             <div className=" ">
-              <h1>Email:</h1>
-              <p className=" max-sm:text-sm">hirockdutta0@gmail.com</p>
+              <h1 className=" font-semibold">Email:</h1>
+              <p className=" max-sm:text-sm opacity-80">hirockdutta0@gmail.com</p>
             </div>
             <div className=" ">
-              <h1>Behance:</h1>
-              <p>hirock Dutta</p>
+              <h1 className=" font-semibold">Behance:</h1>
+              <p className=" max-sm:text-sm opacity-80">hirock Dutta</p>
             </div>
           </div>
           {/* ------------------------ */}

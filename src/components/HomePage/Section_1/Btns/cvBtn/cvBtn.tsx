@@ -41,7 +41,7 @@ const CvBtn = () => {
       <div
         className={` bg-base-100  ${
           !closeFlag ? "hidden" : "block"
-        } overflow-y-scroll  fixed top-0 left-0 w-full h-full  text-base`}
+        } overflow-y-scroll  fixed z-20 top-20 left-0 w-full h-full  text-base`}
       >
         <div className="  container mx-auto px-5 h-full">
           <div className=" my-5 flex justify-end">
@@ -50,7 +50,7 @@ const CvBtn = () => {
             </button>
           </div>
 
-          <div className=" flex justify-center pb-20">
+          <div className=" flex justify-center pb-40">
             <div className="  flex flex-col items-center justify-center h-full w-fit">
               <Image
                 src={"/CV/hirock_resume.jpg"}

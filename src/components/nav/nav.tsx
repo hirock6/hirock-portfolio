@@ -27,7 +27,7 @@ const Nav = () => {
   }, [theme, navFlag]);
 
   return (
-    <nav className="sticky top-0 max-md:bg-base-300 md:backdrop:filter md:backdrop-blur-3xl">
+    <nav className=" z-50 sticky top-0 max-md:bg-base-300 md:backdrop:filter md:backdrop-blur-3xl">
       <div className="  h-20 flex items-center justify-between gap-5">
         <div className="">Hirock.</div>
         <div className="">
@@ -37,7 +37,7 @@ const Nav = () => {
               Style.NavUl
             } max-md:fixed max-md:right-0 max-md:top-20 max-md:flex-col max-md:bg-base-200 max-md:w-52 max-md:p-5 ${
               !navFlag ? "max-md:translate-x-full" : "max-md:translate-x-0"
-            } max-md:transition-all   flex items-start gap-5`}
+            } max-md:transition-all flex items-start gap-5 `}
           >
             <Link
               href={"/"}
@@ -85,12 +85,13 @@ const Nav = () => {
             >
               <li>Contact</li>
             </Link>
+
             <button
               onClick={(e) => {
                 dispatch(addContext(theme)), setTheme(!theme);
               }}
             >
-              <MdOutlineBrightnessMedium />
+              <MdOutlineBrightnessMedium size={20}/>
             </button>
           </ul>
           <button

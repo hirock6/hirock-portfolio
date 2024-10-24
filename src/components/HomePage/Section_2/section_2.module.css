@@ -1,0 +1,13 @@
+@media (min-width: 640px) {
+  .cardContainer:hover {
+    animation: flip 0.5s linear forwards;
+    box-shadow: 0 0 30px black;
+  }
+  @keyframes flip {
+    to {
+      perspective: 1000px;
+      transform: rotate(10deg) rotateY(25deg) rotateZ(2deg) translateZ(-10px);
+      border-radius: 10px 10px 0 0;
+    }
+  }
+}
