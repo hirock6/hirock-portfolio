@@ -1,6 +1,9 @@
 import { BsPersonStanding } from "react-icons/bs";
 import { HiOutlineLightBulb } from "react-icons/hi";
+import { FaRegHandshake } from "react-icons/fa6";
+import { MdOutlineGppGood } from "react-icons/md";
 import Style from "./section_2.module.css";
+import LinkCards from "./contactLinkCards/LinkCards";
 const CardDetails = [
   {
     title: "Leadership",
@@ -16,13 +19,13 @@ const CardDetails = [
   },
   {
     title: "Teamwork",
-    icon: <BsPersonStanding size={100} />,
+    icon: <FaRegHandshake size={100} />,
     description:
       "As a developer, my team work process involves clear communication, active collaboration, sharing knowledge, and leveraging each team member’s strengths to achieve common goals efficiently and effectively.",
   },
   {
     title: "Best Practice",
-    icon: <BsPersonStanding size={100} />,
+    icon: <MdOutlineGppGood size={100} />,
     description:
       "As a developer, my best practices process includes writing clean, maintainable code, following coding standards, prioritizing performance, conducting thorough testing, and continually improving through feedback and learning.",
   },
@@ -31,7 +34,11 @@ const CardDetails = [
 const Section_2 = () => {
   return (
     <section className=" mt-10">
-      <div className="">
+      <section className="">
+        <LinkCards />
+      </section>
+
+      <div className=" mt-10">
         <h1 className=" text-center my-5 text-2xl font-semibold">
           Skills Spotlight
         </h1>
@@ -40,7 +47,7 @@ const Section_2 = () => {
             {CardDetails.map((item: any, index: any) => (
               <div
                 key={index}
-                className={` ${Style.cardContainer} shadow-lg rounded-sm max-lg:w-72 p-5 w-60 max-sm:w-full h-[450px] max-lg:h-[350px]  cursor-pointer max-sm:hover:scale-95 max-sm:hover:bg-base-200 bg-base-300 `}
+                className={` ${Style.cardContainer} shadow-lg rounded-sm max-lg:w-72 p-5 w-60 max-sm:w-full h-[450px] max-lg:h-[350px] max-sm:h-[400px]  cursor-pointer max-sm:hover:scale-95 max-sm:hover:bg-base-200 bg-base-300 `}
               >
                 <div className=" flex justify-center">{item.icon}</div>
                 <div className="mt-4">

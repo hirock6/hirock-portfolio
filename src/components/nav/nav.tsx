@@ -7,6 +7,7 @@ import { MdOutlineBrightnessMedium } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useDispatch } from "react-redux";
 import { usePathname } from "next/navigation";
+import { IoChevronDownSharp } from "react-icons/io5";
 const Nav = () => {
   const pathname = usePathname();
 
@@ -29,7 +30,11 @@ const Nav = () => {
   return (
     <nav className=" z-50 sticky top-0 max-md:bg-base-300 md:backdrop:filter md:backdrop-blur-3xl">
       <div className="  h-20 flex items-center justify-between gap-5">
-        <div className="">Hirock.</div>
+        <button className=" text-3xl font-semibold max-md:text-2xl max-sm:text-xl">
+          Hir<span className=" text-emerald-600">o</span>ck
+          <span className="text-emerald-600">.</span>
+        </button>
+
         <div className="">
           <ul
             onClick={(e) => e.stopPropagation()}
@@ -77,21 +82,25 @@ const Nav = () => {
             >
               <li>Portfolio</li>
             </Link>
-            <Link
-              href={"/info/contact"}
-              className={`${
-                pathname == "/info/contact" ? "text-emerald-600" : ""
-              }`}
-            >
-              <li>Contact</li>
-            </Link>
+
+            <li className=" relative group cursor-pointer ">
+              <span className=" flex items-center ">
+                <span>Contact</span>
+                <IoChevronDownSharp className=" rotate-180 group-hover:rotate-0 " />
+              </span>
+              <ul className=" absolute  left-0 bg-base-300 shadow-lg p-2 rounded-md  sm:hidden sm:group-hover:block  max-sm:collapse-content max-sm:group-hover:collapse">
+                <li className=" cursor-auto">+8801700554293</li>
+                <li className=" cursor-auto">+8801945055264</li>
+                <li className=" cursor-auto">+8801576964131</li>
+              </ul>
+            </li>
 
             <button
               onClick={(e) => {
                 dispatch(addContext(theme)), setTheme(!theme);
               }}
             >
-              <MdOutlineBrightnessMedium size={20}/>
+              <MdOutlineBrightnessMedium size={20} />
             </button>
           </ul>
           <button
@@ -100,7 +109,7 @@ const Nav = () => {
               e.stopPropagation(), setNavFlag(!navFlag);
             }}
           >
-            <RxHamburgerMenu size={30} />
+            <RxHamburgerMenu size={25} />
           </button>
         </div>
       </div>

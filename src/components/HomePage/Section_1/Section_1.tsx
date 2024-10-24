@@ -23,16 +23,18 @@ const Section_1 = () => {
             />
           </h1>
           <p className="mt-3 opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a,
-            mollitia reiciendis nulla debitis ipsam laudantium ad placeat
-            doloribus, illum dignissimos dolor distinctio iste ullam facilis
-            modi, temporibus sed alias.
+            As a full-stack developer, I specialize in building dynamic and
+            scalable web applications, proficient in both front-end and back-end
+            technologies. I create seamless, efficient, and responsive user
+            experiences.
           </p>
           {/* --------- */}
           <div className="flex max-sm:flex-col max-sm:items-start mt-5 items-center gap-5">
             <div className=" ">
               <h1 className=" font-semibold">Email:</h1>
-              <p className=" max-sm:text-sm opacity-80">hirockdutta0@gmail.com</p>
+              <p className=" max-sm:text-sm opacity-80">
+                hirockdutta0@gmail.com
+              </p>
             </div>
             <div className=" ">
               <h1 className=" font-semibold">Behance:</h1>
@@ -40,7 +42,7 @@ const Section_1 = () => {
             </div>
           </div>
           {/* ------------------------ */}
-          <div className="mt-5 flex max-sm:flex-col items-center gap-5">
+          <div className="mt-10 max-sm:mt-5 flex max-sm:flex-col items-center gap-5">
             <CvBtn />
             <HireBtn />
           </div>
