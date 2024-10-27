@@ -38,13 +38,18 @@ const Nav = () => {
 
   const [theme, setTheme] = useState(false);
   const [navFlag, setNavFlag] = useState(false);
-
-  useEffect(() => {
+  const onTheme = ()=>{
     if (!theme) {
       document.documentElement.setAttribute("data-theme", "light");
     } else {
       document.documentElement.removeAttribute("data-theme");
     }
+  }
+
+  useEffect(() => {
+
+    
+
     window.addEventListener("click", () => {
       setNavFlag(false);
     });
@@ -54,7 +59,7 @@ const Nav = () => {
     } else {
       document.body.style.overflow = "hidden";
     }
-  }, [theme, navFlag]);
+  }, [ navFlag]);
 
   return (
     <nav className=" z-50 sticky top-0 max-md:bg-base-300 md:backdrop:filter md:backdrop-blur-3xl">
@@ -111,10 +116,10 @@ const Nav = () => {
 
               <button
                 onClick={(e) => {
-                  dispatch(addContext(theme)), setTheme(!theme);
+                  dispatch(addContext(theme)),onTheme(), setTheme(!theme);
                 }}
               >
-                <MdOutlineBrightnessMedium size={20} />
+                <MdOutlineBrightnessMedium color="red" size={20} />
               </button>
             </ul>
           </div>
