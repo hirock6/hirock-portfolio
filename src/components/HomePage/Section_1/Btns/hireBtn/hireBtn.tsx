@@ -1,5 +1,5 @@
 "use client";
-import Style from './hire.module.css'
+import Style from "./hire.module.css";
 import { useState, useEffect } from "react";
 const HireBtn = () => {
   const [hireFlag, setHireFlag] = useState(false);
