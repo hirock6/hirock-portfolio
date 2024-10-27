@@ -78,7 +78,7 @@ const Nav = () => {
             <div
               className={` md:hidden max-md:block  text-white max-md:p-7 w-full max-md:flex max-md:justify-end max-md:backdrop:filter max-md:backdrop-blur-3xl`}
             >
-              <button className="border">cancel</button>
+              <button className="">cancel</button>
             </div>
             <ul
               onClick={(e) => e.stopPropagation()}
