@@ -108,7 +108,7 @@ const Nav = () => {
                   <IoChevronDownSharp className=" rotate-180 group-hover:rotate-0 " />
                 </span>
                 <ul className=" absolute max-md:text-sm  left-0 bg-base-300 shadow-lg p-2 rounded-md  sm:hidden sm:group-hover:block  max-md:collapse-content max-md:group-hover:collapse">
-                  <li className=" cursor-auto">+8801700554293</li>
+                  <li className="">+8801700554293</li>
                   <li className=" cursor-auto">+8801945055264</li>
                   <li className=" cursor-auto">+8801576964131</li>
                 </ul>
